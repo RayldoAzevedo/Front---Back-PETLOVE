@@ -1,0 +1,285 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+.header{
+  padding: 0;
+    margin: 0;
+    background-color: #3F213B !important;
+    color: white;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.mark{
+  font-size: 1em;
+  background-color: #361832 !important;
+  border-radius: 10px;
+  color :white;
+}
+.mark:hover{
+  color :white;
+  font-size: 1.1em;  
+}
+.borderteste{
+  /* border: solid #9F213B 2px; */
+  padding-left: 120px;
+  padding-top: 0;
+}
+.fonte{
+  text-align: right;
+}
+.toptexto{
+  font-size: 2.5em;
+  margin-top: 80px;
+  color: #3F213B;    
+}
+.topnav{
+    margin-top: 50px;
+    color: #9F213B;    
+}
+.trespacamento{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.distanciatexto{
+  margin-top: 30px;  
+}
+.cuidados{
+  font-size: 17px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+.quemsomos{
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.link{ 
+  background: #e1eaeb;
+  color: black;
+  left: 0px;
+  height: 20px;
+  width: 440px;  
+  font-size: 16px;
+  border-top: 1px solid #dbe5e8; 
+  -webkit-border-radius: 0 0  5px 5px;
+  border-radius: 0 0  5px 5px;
+}
+.btentrar:hover{
+  width: 180px;
+  height: 35px;
+  background: #361832 !important;
+  font-family: cursive; 
+  font-size: 1.2em;
+}
+.btentrar {
+  width: 170px;
+  background: #3F213B !important;
+  font-family: cursive;
+}
+.btregistrar:hover{
+  width: 180px;
+  height: 35px;
+  background: #DF6E2F !important;
+  font-family: cursive; 
+  font-size: 1.2em;
+}
+.btregistrar {
+  width: 170px;
+  background: #DF6E2F !important;
+  font-family: cursive;
+}
+.navmark{
+  padding: 0;
+  border: 0;
+}
+.navmark:hover{
+  font-size: 1.2em;
+}
+.nav{
+  color: black !important;
+  padding-right: 2rem !important ;
+  font-family: cursive;
+}
+.nav:hover{  
+  padding-right: 2rem !important ;
+  font-family: cursive;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #3F213B;
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #FFFF00;
+  }
+
+.bannercuidado{
+  background-image: url("/cuidados.png")  ;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-color: #3F213B;
+  height: 378px;
+}
+.bannerquemsomos{
+  background-image: url("/quemsomos.jpg")  ;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-color: #3F213B;
+  height: 378px;
+}
+
+.tdlog{
+  background: #E380490F;
+}
+.pegadas{
+  text-align: right;
+}
+select{border-radius: 12px; background-color: white !important;}
+
+tr, td, th {border-radius: 12px; background-color: #3F213B; color: aliceblue;  border: solid 8px; }
+table{border: solid 10px; }
+
+.tablespace {padding-top: 15px;}
+.banner{
+  background-image: url("/banner2.png")  ;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-color: #3F213B;
+  height: 378px;
+}
+.adotequemsomos{  
+  color: #3F213B !important;
+  font-size: 5em;
+  padding-top: 80px;
+  margin-left: 60px;
+  font-family: cursive;  
+}
+.adotequemsomos2{  
+  color: #3F213B !important;
+  font-size: 5em;
+  margin-left: 100px;
+  font-family: cursive;  
+}
+.ligacao {
+  color: #3F213B !important;
+  margin-right: 50px ;
+  text-align: right;
+  font-size: 3em;
+  font-family: cursive;
+}
+.adotecuidado2{  
+  color: #3F213B !important;
+  font-size: 4em;
+  text-align: right;
+  margin-right: 80px;
+  font-family: cursive;  
+}
+.adotecuidado{  
+    color: #3F213B !important;
+    padding-top: 80px;
+    margin-left: 50px;
+    font-family: cursive;  
+}
+
+.adote{
+  color: aliceblue !important;
+  padding-top: 80px;
+  margin-left: 50px;
+  font-family: cursive;
+}
+
+.adote2{
+  color: #DF6E2F !important;
+  padding-top: 80px;
+  margin-left: 50px;
+  font-family: cursive;
+}
+.btvejamais:hover{
+  margin-left: 50px ;
+  margin-top: 50px;
+  width: 190px;
+  height: 50px;
+  background: #DF6E2F !important;
+  font-family: cursive;
+  font-size: 1.5em;
+}
+.btvejamais {
+  margin-left: 50px ;
+  margin-top: 50px;
+  width: 181px;
+  background: #DF6E2F !important;
+  font-family: cursive;
+}
+.lig {
+  color: #DF6E2F !important;
+  margin-left: 50px ;
+}
+
+.btcoracao {
+  background-image: url("/coracao.png")  ;
+  background-repeat: no-repeat;
+  height:  320px !important;
+  background-color: white !important;
+  border: none !important;
+  font-size:0;  
+}
+.btcoracao:hover{
+  background-image: url("/coracao.png")  ;
+  background-repeat: no-repeat;
+  width: 250px;
+  background-color: white !important;
+  border: none !important;
+  font-size:2em;
+}
+.btpegada:hover{
+  background-image: url("/peg.png")  ;
+  background-repeat: no-repeat;
+  width: 300px !important;
+  border: none !important;
+  font-size: 2em;
+}
+.btpegada{
+  background-image: url("/peg.png")  ;
+  background-repeat: no-repeat;
+  width: 290px ;
+  background-color: white !important;
+  border: none !important;
+  font-size:0;
+
+}
+
+.textado{
+  margin-top: 130px;
+}
+.paddingbotton{
+  margin-top: 70px;
+  margin-bottom: 50px;  
+}
+.topoq {
+  margin-top: 70px;
+}
+
+.optext {
+  font-family: cursive;
+    text-align: end;
+}
+
+.divfooter {
+  background-color: rgba(227, 128, 73, 0.09);
+}
+
+/* formuláario contato */
