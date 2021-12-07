@@ -3,7 +3,8 @@ import Image from 'next/image';
 
 
 const Banner = () => (
-  <div className="container">
+  <>
+  <div className="container mb-0 mt-0 p-0">
     <div className="row">
 
       <div className="col-sm-8 col-lg-5">
@@ -31,7 +32,7 @@ const Banner = () => (
 
     </div>
   </div>
-
+ </>
 
 );
 

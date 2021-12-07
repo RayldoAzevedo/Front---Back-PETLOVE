@@ -1,13 +1,29 @@
-import { Container, Row, Col, Media, Nav, NavItem, NavLink, Button} from 'reactstrap';
+import { Container, Row, Col, Media, Nav, NavItem, NavLink, Button } from 'reactstrap';
 import Image from 'next/image';
 
 
-const Banner = () =>(
-<Container>
-  <h2 className="adote2">Categoria de Serviços</h2>
-  <Row><Image src="/catserv.png" width={1166} height={207} /></Row>
-  <space>.</space>
-</Container>
+const Banner = () => (
+  <>
+    <div className="container mb-0">
+      <h2 className="adote2">Categoria de Serviços</h2>
+      <div className="row">
+        <div className="col-lg-3 categoria">
+          <Image src="/higienico.png" width={324} height={225} />
+        </div>
+        <div className="col-lg-3">
+          <Image src="/treinamento.png" width={324} height={225} />
+        </div>
+        <div className="col-lg-3 " >
+          <Image src="/creche.png" width={324} height={225} />
+        </div>
+        <div className="col-lg-3 ">
+          <Image src="/saude.png" width={324} height={225} />
+        </div>
+        <space>.</space>
+      </div>
+    </div>
+
+  </>
 
 );
 

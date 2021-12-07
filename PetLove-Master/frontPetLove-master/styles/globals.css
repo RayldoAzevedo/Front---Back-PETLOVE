@@ -201,6 +201,14 @@ table{border: solid 10px; }
   margin-left: 50px;
   font-family: cursive;
 }
+.categoria:hover{
+  width: 335 !important;
+  height: 235 !important;
+}
+.categoria{
+  height: 225;
+  width: 324;
+}
 
 .adote2{
   color: #DF6E2F !important;
@@ -211,11 +219,15 @@ table{border: solid 10px; }
 .btvejamais:hover{
   margin-left: 50px ;
   margin-top: 50px;
-  width: 190px;
-  height: 50px;
+  width: 185px;
+  height: 40px;
+  border-radius: 4px;
+  border-top: solid 2px #dbe5e8 ;
+  border-left: solid 2px #dbe5e8;
   background: #DF6E2F !important;
+  color:white !important;
   font-family: cursive;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 .btvejamais {
   margin-left: 50px ;
@@ -223,6 +235,7 @@ table{border: solid 10px; }
   width: 181px;
   background: #DF6E2F !important;
   font-family: cursive;
+  color: black !important;
 }
 .lig {
   color: #DF6E2F !important;
