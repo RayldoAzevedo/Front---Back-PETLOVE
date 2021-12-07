@@ -6,7 +6,7 @@ const Banner = () =>(
   <Container>
     <h1 className="adote">Adote um Amigo<br/>e tenha atenção incondicional</h1>
     <h5 className="lig">A ligação humano-pet é a relação verdadeira de amor e carinho.</h5>
-    <Button className="btvejamais">Veja mais</Button>
+    <Button className="btvejamais" link href="/showpet">Veja mais</Button>
   </Container>
 </div>
 );

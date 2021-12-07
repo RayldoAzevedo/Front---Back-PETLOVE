@@ -8,7 +8,7 @@ function showPet() {
     return (
         <>
             <TopLogin/>
-            <div className="container mt-3 mb-2">
+            <div className="container mt-5 mb-4">
                 {/* linha 1 */}
                 <div className="row mb-4">
                     {/* coluna 1*/}
@@ -22,7 +22,7 @@ function showPet() {
                             <ul>
                                 <li>
                                     <strong>Local: </strong>
-                                    Aparecida
+                                    Aparecida de Goiânia
                                 </li>
                             </ul>
                             {/* botoes */}
@@ -151,7 +151,7 @@ function showPet() {
                             <ul>
                                 <li>
                                     <strong>Local: </strong>
-                                    Trindade
+                                    Goianira
                                 </li>
                             </ul>
                             {/* botoes */}
@@ -201,7 +201,7 @@ function showPet() {
                             <ul>
                                 <li>
                                     <strong>Local: </strong>
-                                    Goiânia
+                                    Aparecida de Goiânia
                                 </li>
                             </ul>
                             {/* botoes */}

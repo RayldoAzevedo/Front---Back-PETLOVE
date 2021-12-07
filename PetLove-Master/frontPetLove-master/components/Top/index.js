@@ -11,7 +11,6 @@ const Top = () => (
       <div className="col-sm-4 col-lg-2">
         <Image src="/logo.png" width={169} height={91} />
       </div>
-
       {/* menu */}
       <div className="col-sm-4 col-lg-6">
         <Nav className="topnav">

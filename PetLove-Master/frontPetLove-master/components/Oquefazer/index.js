@@ -18,7 +18,7 @@ const Banner = () => (
       {/* adoçao */}
       <div className="col-sm-8 col-lg-2">
         <div className="btado d-grid gap-2">
-          <Button className="btcoracao d-grid gap-2" variant="primary" size="lg"><span className="textado">Adoção </span></Button>{' '}
+          <Button className="btcoracao d-grid gap-2" variant="primary" size="lg" link href="/showpet"><span className="textado">Adoção </span></Button>{' '}
         </div>
       </div>
 
