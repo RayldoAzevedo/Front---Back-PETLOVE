@@ -1,8 +1,10 @@
 import React from 'react';
+// componentes
 // import Top from '../components/Top';
 import TopLogin from '../components/TopLogin';
 import CatServico from '../components/CatServico'
 import Footer from '../components/Footer'
+
 import { Row, Col } from "reactstrap";
 import Image from "next/image";
 import Styles from "../styles/User.module.css"

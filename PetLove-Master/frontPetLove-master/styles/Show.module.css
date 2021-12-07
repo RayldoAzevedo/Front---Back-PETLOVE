@@ -1,0 +1,10 @@
+.btn:hover{
+    border: solid #3F213B 0 2.5px 2.5px 0;
+    font-family: cursive; 
+    font-size: 1.1em;
+    color: azure
+}
+.btn {
+    background: #DF6E2F !important;
+    font-family: cursive;   
+  }
