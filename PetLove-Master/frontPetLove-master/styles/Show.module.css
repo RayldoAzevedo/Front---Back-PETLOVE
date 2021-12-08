@@ -5,10 +5,12 @@
     color: azure
 }
 
-.btn {
-    background: #DF6E2F !important;
+.btn {    
+    background: #DF6E2F ;
     font-family: cursive;
-    border-radius: 20px;   
+    border-radius: 20px; 
+    margin-bottom: 10px;
+    width: 80px;     
 }
 
 
@@ -29,4 +31,15 @@
     border-radius: 50px;
 }
 
+#petdetalhes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
 
+#exibir{
+    border-radius: 50px;
+    background-color:rgb(212, 209, 209) ;
+    display: flex;
+    justify-content:center;    
+}

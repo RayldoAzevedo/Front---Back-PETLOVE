@@ -29,7 +29,8 @@ function FormPet() {
             {
 
                 nome: data.nome,
-                nascimento: data.nascimento,
+                idade: data.idade,
+                tempo: data.tempo,
                 raca: data.raca,
                 caracteristicas: data.caracteristicas,
                 especie: data.especie,
@@ -91,10 +92,10 @@ function FormPet() {
                                 </div>
                             </div>
 
-                            {/* nascimento */}
+                            {/* idade */}
                             <div className="col-sm-12 col-md-6 col-lg-1">
                                 <div className="form-floating mb-3 mt-3 me-n1 mx-0">
-                                    <input type="text" onChange={(e) => handle(e)} value={data.nascimento}
+                                    <input type="text" onChange={(e) => handle(e)} value={data.idade}
                                         className="form-control"
                                         id="nascimento"
                                         placeholder="Idade estimada"
@@ -105,7 +106,7 @@ function FormPet() {
                             {/* meses / anos */}
                             <div className="col-sm-12 col-md-12 col-lg-2">
                                 <div className="form-floating mt-3 mb-3 me-2 mx-n2">
-                                    <select name="idade" className="form-select" id="idade" onChange={(e) => handle(e)}>
+                                    <select name="idade" className="form-select" id="idade" onChange={(e) => handle(e)} value={data.tempo}>
                                         <option value="sel" >----</option>
                                         <option value="Meses">Meses</option>
                                         <option value="Anos">Anos</option>

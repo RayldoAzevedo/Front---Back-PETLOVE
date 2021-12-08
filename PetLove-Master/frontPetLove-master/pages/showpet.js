@@ -2,6 +2,7 @@ import TopLogin from '../components/TopLogin';
 import CatServico from '../components/CatServico'
 import Footer from '../components/Footer'
 import Styles from "../styles/Show.module.css"
+import {Button} from "reactstrap"
 
 function showPet() {
     const animais = [
@@ -72,10 +73,10 @@ function showPet() {
                                         {/* botoes */}
                                         <div className="row">
                                             <div className="col-sm-1 col-lg-5">
-                                                <button className={Styles.btn} >Descrição</button>
+                                                <Button className="botoes" size="sm" href="/descricao">Mais</Button>
                                             </div>
                                             <div className="col-sm-1 col-lg-5">
-                                                <button className={Styles.btn} >Adotar</button>
+                                                <Button className="botoes" size="sm" >Adotar</Button>
                                             </div>
                                         </div>
                                     </div>

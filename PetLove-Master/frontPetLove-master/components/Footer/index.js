@@ -15,7 +15,7 @@ const Footer = () => (
                 <Col>
                   <div class="col-auto">
                     <p class="footer__menu-list-title">Onde estamos</p>
-                    <a href="https://www.facebook.com/" title="Facebook da Petlove" target="_blank" rel="noopener" class="mr-8">
+                    <a href="https://www.facebook.com/petlovego" title="Facebook da Petlove" target="_blank" rel="noopener" class="mr-8">
                       <img data-sizes="auto" data-src="https://www.petlove.com.br/static/uploads/images/social/icon_facebook.svg" src="https://www.petlove.com.br/static/uploads/images/social/icon_facebook.svg" alt="Facebook" width="28" height="28" class="lazyautosizes lazyloaded" sizes="172px" />
                     </a>
                     <a href="https://www.instagram.com/" title="Instagram da Petlove" target="_blank" rel="noopener" class="mr-8">
