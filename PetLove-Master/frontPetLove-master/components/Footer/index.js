@@ -1,24 +1,38 @@
-import { Container, Row, Col, Media, Nav, NavItem, NavLink, Button} from 'reactstrap';
+import { Container, Row, Col, Media, Nav, NavItem, NavLink, Button } from 'reactstrap';
 import Image from 'next/image';
 
-const Footer = () =>(
+const Footer = () => (
   <div className="divfooter">
     <Container>
-    <Row>
+      <Row>
         <Col>
           <Row>
             <Col>
-            <Row>
-            <Col>
-            <Image src="/logo.png" width={169} height={91} />
-            </Col>
-            <Col>
-              <Row style={{ justifyContent: 'center'}}> Siga nossas redes    </Row>
-              <Row><Col style={{textAlign: 'right'}}> <Image src="/face.svg" width={58} height={58} /></Col><Col>  <Image src="/inst.png" width={58} height={58} /> </Col> </Row>
+              <Row>
+                <Col>
+                  <Image src="/logo.png" width={169} height={91} />
+                </Col>
+                <Col>
+                  <div class="col-auto">
+                    <p class="footer__menu-list-title">Onde estamos</p>
+                    <a href="https://www.facebook.com/" title="Facebook da Petlove" target="_blank" rel="noopener" class="mr-8">
+                      <img data-sizes="auto" data-src="https://www.petlove.com.br/static/uploads/images/social/icon_facebook.svg" src="https://www.petlove.com.br/static/uploads/images/social/icon_facebook.svg" alt="Facebook" width="28" height="28" class="lazyautosizes lazyloaded" sizes="172px" />
+                    </a>
+                    <a href="https://www.instagram.com/" title="Instagram da Petlove" target="_blank" rel="noopener" class="mr-8">
+                      <img data-sizes="auto" data-src="https://www.petlove.com.br/static/uploads/images/social/icon_instagram.svg" src="https://www.petlove.com.br/static/uploads/images/social/icon_instagram.svg" alt="Instagram" width="28" height="28" class="lazyautosizes lazyloaded" sizes="172px" />
+                    </a>
+                    <a href="https://www.twitter.com/" title="Twitter da Petlove" target="_blank" rel="noopener" class="mr-8">
+                      <img data-sizes="auto" data-src="https://www.petlove.com.br/static/uploads/images/social/icon_twitter.svg" src="https://www.petlove.com.br/static/uploads/images/social/icon_twitter.svg" alt="Twitter" width="28" height="28" class="lazyautosizes lazyloaded" sizes="172px" />
+                    </a>
+                    <a href="https://www.youtube.com/user/" title="Youtube da Petlove" target="_blank" rel="noopener" class="mr-8">
+                      <img data-sizes="auto" data-src="https://www.petlove.com.br/static/uploads/images/social/icon_youtube.svg" src="https://www.petlove.com.br/static/uploads/images/social/icon_youtube.svg" alt="Youtube" width="28" height="28" class="lazyautosizes lazyloaded" sizes="172px" />
+                    </a>
+                    
+                  </div>
 
-            </Col>
+                </Col>
 
-          </Row>
+              </Row>
             </Col>
 
           </Row>
@@ -26,9 +40,16 @@ const Footer = () =>(
         <Col>
           <Row>
             <Col >
-                <Row>.</Row>
-                <Row><Col>Hotel e Creche</Col ><Col>Pet Shop</Col ></Row>
-                <Row><Col>(62) 99147-2313</Col ><Col>(62) 98529-6362</Col ></Row>
+              
+              <Row><Col>
+              <p class="footer__menu-list-title mt-24">Baixe o app</p>
+                    <a href="#" title="Baixar na App Store" target="_blank" rel="noopener" class="block mr-8">
+                      <img data-sizes="auto" data-src="https://www.petlove.com.br/static/uploads/banner_image/image/17754/apple_stroke.png" src="https://www.petlove.com.br/static/uploads/banner_image/image/17754/apple_stroke.png" alt="Apple store" width="146" class="footer__menu-list-img lazyautosizes lazyloaded" heigth="43" sizes="146px" />
+                    </a>
+                    <a href="#" title="Baixar na Google Play" target="_blank" rel="noopener" class="block">
+                      <img data-sizes="auto" data-src="https://www.petlove.com.br/static/uploads/banner_image/image/17755/google_stroke.png" src="https://www.petlove.com.br/static/uploads/banner_image/image/17755/google_stroke.png" alt="Play store" width="146" class="footer__menu-list-img lazyautosizes lazyloaded" heigth="43" sizes="146px" />
+                    </a></Col ></Row>
+              <Row></Row>
             </Col>
           </Row>
         </Col>
@@ -36,8 +57,8 @@ const Footer = () =>(
       <Row>
       </Row>
     </Container>
-    
-    <hr size="3" width="100%"/>
+
+    <hr size="3" width="100%" />
     <Container>
       <Row>
         <Col>

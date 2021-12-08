@@ -1,43 +1,40 @@
-import { Col, Container, Row } from "reactstrap";
-import Image from "next/image";
-import validator from "validator";
 import Styles from "../../styles/Pet.module.css"
 import axios, { Axios } from "axios";
 import { useEffect, useState } from "react";
-function Login(){
-    const url="http://localhost:8080/Login"
-    const [data,setData] = useState({
-       email:"",
-       senha:"" ,
-       teste:""
+
+function Login() {
+    const url = "http://localhost:8080/Login"
+    const [data, setData] = useState({
+        email: "",
+        senha: "",
+        teste: ""
     })
-    
-    function submit(e){
+
+    function submit(e) {
         e.preventDefault();
-        
         axios.post(url,
-        {
-            email:data.email,
-            senha:data.senha
-        })
-        
-        .then(res =>{
-            
-            console.log(res.data)
-            if (res.data) {
-                global.localStorage.clear();
-                global.localStorage.setItem('email', data.email);
+            {
+                email: data.email,
+                senha: data.senha
+            })
 
-                window.location.href = "http://localhost:3000/inicio";
-              } else {
-                alert("Email ou senha inválido");
-              }
-        })
+            .then(res => {
 
-    } function handle (e){
+                console.log(res.data)
+                if (res.data) {
+                    global.localStorage.clear();
+                    global.localStorage.setItem('email', data.email);
+
+                    window.location.href = "http://localhost:3000/inicio";
+                } else {
+                    alert("Email ou senha inválido");
+                }
+            })
+
+    } function handle(e) {
         data.teste = localStorage.getItem('email');
 
-        const newdata={...data}
+        const newdata = { ...data }
         newdata[e.target.id] = e.target.value
         setData(newdata)
         console.log(newdata)
@@ -48,8 +45,7 @@ function Login(){
             <div className="row align-items-center">
                 {/* imagem */}
                 <div className="col-sm-8 col-lg-4 tdlog">
-                    <img className="imagem" src="/log1.jpg"/>
-                    {/* <Image src="/log1.jpg" width={370} height={458} /> */}
+                    <img className="imagem" src="/log1.jpg" />
                 </div>
 
                 {/* formulario */}
@@ -60,21 +56,21 @@ function Login(){
                         </div>
 
                         <div className="card-body">
-                            <form onSubmit={(e)=> submit(e)} id="userdados" >
+                            <form onSubmit={(e) => submit(e)} id="userdados" >
                                 <div className="form-floating mb-3">
-                                    <input type="email" onChange={(e)=>handle(e)} value={data.email}
-                                    className="form-control" id="email" placeholder="name@example.com" />
+                                    <input type="email" onChange={(e) => handle(e)} value={data.email}
+                                        className="form-control" id="email" placeholder="name@example.com" />
                                     <label htmlFor="floatingInputEmail">Seu e-mail</label>
                                 </div>
                                 <div className="form-floating">
-                                    <input type="password" onChange={(e)=>handle(e)} value={data.senha}
-                                     className="form-control" id="senha" placeholder="Sua senha" />
+                                    <input type="password" onChange={(e) => handle(e)} value={data.senha}
+                                        className="form-control" id="senha" placeholder="Sua senha" />
                                     <label htmlFor="floatingPassword">Sua senha</label>
                                 </div>
-                                
+
                                 <div className="col-sm-8 col-lg-12 borderteste">
-                                <button type="submit" className="btvejamais lg">Entrar</button>
-                            </div>
+                                    <button type="submit" className="btvejamais lg">Entrar</button>
+                                </div>
                             </form>
                         </div>
 
@@ -83,9 +79,9 @@ function Login(){
                             <label for="exampleCheck1" className="form-check-label">Mantenha conectado</label>
                         </div>
                         <div className="card-footer ">
-                            
+
                             <div className=" link col-lg-12">
-                                <br/><br/>Ainda não tem conta? <a href="/cadastrouser" className="mark"> Cadastre-se</a>
+                                <br /><br />Ainda não tem conta? <a href="/cadastrouser" className="mark"> Cadastre-se</a>
                             </div>
                         </div>
 

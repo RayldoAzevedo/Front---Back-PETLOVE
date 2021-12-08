@@ -55,7 +55,8 @@ export default function Home() {
         <Banner/>
         <Oqf/>
         <CardAdocao/>
-        <CatServico/>
+        {/* <CatServico/> */}
+        <Servicos/>
         <Footer/>
     </div>
   )

@@ -195,11 +195,11 @@ function FormPet() {
                                 </div>
                             </div>
                         </div>
-                        {/* foto */}
-                        <div className="col-sm-12 col-md-auto col-lg-3 col">
+                        {/* carregar imagem */}
+                        <div className="d-flex justify-content-center mb-4 ">
                             <div className="me-2">
-                                <label className="ms-3 fw-bold" id={Styles.label}> Adiconar Foto</label>
-                                <input type="file" name="arquivos" className="btn" multiple />
+                                <label className="ms-3 fw-bold" id={Styles.label} for="fotoDoPet">Foto do pet</label>
+                                <input type="file" id="FotoDoPet" className="form-control-file" multiple />
                             </div>
                         </div>
                         

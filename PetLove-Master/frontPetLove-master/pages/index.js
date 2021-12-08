@@ -8,6 +8,7 @@ import Banner from '../components/Banner'
 import Oqf from '../components/Oquefazer'
 import CardAdocao from '../components/CardAdocao'
 import CatServico from '../components/CatServico'
+import Servicos from '../components/Servicos';
 import Footer from '../components/Footer'
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Oqf/>
         <CardAdocao/>
         <CatServico/>
+        {/* <Servicos/> */}
         <Footer/>
     </div>
   )
