@@ -70,9 +70,16 @@
     font-family: cursive; 
     font-size: 1.2em;
 }
-
+#label{
+    background-color: #3F213B;
+    color:white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+}
 .btregistrar {
     width: 170px;
     background: #DF6E2F !important;
-    font-family: cursive;   
+    font-family: cursive; 
+    border-radius: 20px;  
   }

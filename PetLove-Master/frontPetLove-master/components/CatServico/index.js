@@ -1,6 +1,6 @@
 import { Container, Row, Col, Media, Nav, NavItem, NavLink, Button } from 'reactstrap';
 import Image from 'next/image';
-
+import Styles from '../../styles/Componentes.module.css';
 
 const Banner = () => (
   <>
@@ -11,6 +11,7 @@ const Banner = () => (
           <Image src="/higienico.png" width={324} height={225} />
         </div>
         <div className="col-lg-3">
+          {/* <img src="/treinamento.png" className={Styles.categoria}/> */}
           <Image src="/treinamento.png" width={324} height={225} />
         </div>
         <div className="col-lg-3 " >

@@ -50,10 +50,9 @@
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='24'><rect fill='rgb(229, 225, 187)' x='0' y='23' width='10' height='1'/></svg>");
 }
 .button {
- padding: 0.5rem 1rem;
- border-radius: 0.25rem;
- height: 40px;
- width: 170px;
+ border-radius: 20px;
+ height: 30px;
+ width: 150px;
  background: #DF6E2F !important;
  font-family: cursive;  
  color: white;

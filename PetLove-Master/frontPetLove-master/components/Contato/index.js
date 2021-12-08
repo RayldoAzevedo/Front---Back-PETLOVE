@@ -5,7 +5,7 @@ import Styles from "../../styles/Contato.module.css"
 
 const Contato = () => {
     return (
-        <div className="container body">
+        <div className="container body mb-5 mt-5">
             <div className="row">
                 <small className={Styles.small}>Entre com sua mensagem (opcional) e clique "Enviar"</small>
                 <div class="wrapper centered corpocarta col-sm-8 col-lg-12">
