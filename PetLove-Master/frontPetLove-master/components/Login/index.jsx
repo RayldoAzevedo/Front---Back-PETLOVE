@@ -48,7 +48,8 @@ function Login(){
             <div className="row align-items-center">
                 {/* imagem */}
                 <div className="col-sm-8 col-lg-4 tdlog">
-                    <Image src="/log1.jpg" width={370} height={458} />
+                    <img className="imagem" src="/log1.jpg"/>
+                    {/* <Image src="/log1.jpg" width={370} height={458} /> */}
                 </div>
 
                 {/* formulario */}
@@ -72,11 +73,10 @@ function Login(){
                                 </div>
                                 
                                 <div className="col-sm-8 col-lg-12 borderteste">
-                                <button type="submit" className="btn btn-primary btvejamais lg">Entrar</button>
+                                <button type="submit" className="btvejamais lg">Entrar</button>
                             </div>
                             </form>
                         </div>
-
 
                         <div className="mb-3 form-check d-flex justify-content-center" >
                             <input type="checkbox" id="exampleCheck1" className="form-check-input" id="exampleCheck1" />

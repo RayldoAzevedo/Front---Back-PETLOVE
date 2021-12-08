@@ -23,7 +23,7 @@ a {
 }
 .mark{
   font-size: 1em;
-  background-color: #361832 !important;
+  background-color: teal !important;
   border-radius: 10px;
   color :white;
 }
@@ -80,28 +80,30 @@ a {
   border-radius: 0 0  5px 5px;
 }
 .btentrar:hover{
-  width: 180px;
+  width: 125px;
   height: 35px;
   background: #361832 !important;
   font-family: cursive; 
   font-size: 1.2em;
 }
 .btentrar {
-  width: 170px;
+  width: 120px;
   background: #3F213B !important;
   font-family: cursive;
+  border-radius: 20px !important;
 }
 .btregistrar:hover{
-  width: 180px;
+  width: 125px;
   height: 35px;
   background: #DF6E2F !important;
   font-family: cursive; 
   font-size: 1.2em;
 }
 .btregistrar {
-  width: 170px;
+  width: 120px;
   background: #DF6E2F !important;
   font-family: cursive;
+  border-radius: 20px !important;
 }
 .navmark{
   padding: 0;
@@ -156,6 +158,8 @@ table{border: solid 10px; }
 .tablespace {padding-top: 15px;}
 .banner{
   background-image: url("/banner2.png")  ;
+  display: flex;
+  justify-content: flex;
   background-repeat: no-repeat;
   background-position-x: center;
   background-color: #3F213B;
@@ -219,9 +223,7 @@ table{border: solid 10px; }
 .btvejamais:hover{
   margin-left: 50px ;
   margin-top: 50px;
-  width: 185px;
-  height: 40px;
-  border-radius: 4px;
+  width: 125px;
   border-top: solid 2px #dbe5e8 ;
   border-left: solid 2px #dbe5e8;
   background: #DF6E2F !important;
@@ -232,10 +234,11 @@ table{border: solid 10px; }
 .btvejamais {
   margin-left: 50px ;
   margin-top: 50px;
-  width: 181px;
+  width: 120px;
   background: #DF6E2F !important;
   font-family: cursive;
   color: black !important;
+  border-radius: 20px !important;
 }
 .lig {
   color: #DF6E2F !important;
@@ -272,7 +275,6 @@ table{border: solid 10px; }
   background-color: white !important;
   border: none !important;
   font-size:0;
-
 }
 
 .textado{
@@ -293,6 +295,10 @@ table{border: solid 10px; }
 
 .divfooter {
   background-color: rgba(227, 128, 73, 0.09);
+}
+.imagem{
+  width: 370px;
+  height: 450px;
 }
 
 /* formuláario contato */
