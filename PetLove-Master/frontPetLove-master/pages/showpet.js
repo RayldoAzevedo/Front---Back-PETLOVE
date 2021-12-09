@@ -5,6 +5,7 @@ import Styles from "../styles/Show.module.css"
 import {Button} from "reactstrap"
 
 function showPet() {
+
     const animais = [
         {
             nome: "Anne",
@@ -45,10 +46,17 @@ function showPet() {
             nome: "Fly",
             foto: "https://www.petz.com.br/blog/wp-content/uploads/2019/07/vida-de-gatos.jpg",
             local: "Aparecida de Goiânia"            
+        },
+        {
+            nome: "novo animal",
+            foto: "https://www.petz.com.br/blog/wp-content/uploads/2019/07/vida-de-gatos.jpg",
+            local: "Goiânia"            
         }
     ]
 
-    return (
+    
+
+    return (        
         <>
             <TopLogin />
             <div className={Styles.animal}>
@@ -59,24 +67,28 @@ function showPet() {
                                 {/* coluna 1*/}
                                 <div >
                                     <img src={animal.foto} className={Styles.imagem} alt="" />
-                                    <div >
-                                        <div className="fs-3 fw-bold text-info text-xl mb-2">
-                                            <label >{animal.nome}</label>
+                                    <div className="m-0 p-0">
+                                        <div className="fs-3 fw-bold descricaotexto text-xl">
+                                            <label>{animal.nome}</label>
                                         </div>
                                         {/* localidade*/}
-                                        <ul>
+                                        <ul className="p-0 m-0">
                                             <li>
-                                                <strong>Local: </strong>
+                                                <strong className="reset">Local: </strong>
                                                 {animal.local}
                                             </li>
                                         </ul>
-                                        {/* botoes */}
+
+                                        {/* L2 botoes */}
                                         <div className="row">
+                                            {/* L2/C1 */}
                                             <div className="col-sm-1 col-lg-5">
-                                                <Button className="botoes" size="sm" href="/descricao">Mais</Button>
+                                                <a href="/adotar"> <button type="button" className="mdcoracao button button-1" id="">Adotar</button></a>
+                                                {/* <Button className="botoes" size="sm" href="">Mais</Button> */}
                                             </div>
+                                            {/* L2/C2 */}
                                             <div className="col-sm-1 col-lg-5">
-                                                <Button className="botoes" size="sm" >Adotar</Button>
+                                            <a href="/descricao"> <button type="button" className="smpegada button button-1" id="">saber mais</button></a>
                                             </div>
                                         </div>
                                     </div>
@@ -84,8 +96,10 @@ function showPet() {
                             </div>
                         </div>
                     ))}
+                    <div className="">
+                        
+                    </div>
             </div>
-
 
             <Footer />
         </>

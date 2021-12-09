@@ -9,16 +9,16 @@ function Detalhes() {
     const url = "http://localhost:8080/animais"
 
     const animal = {
-        imagem: "https://image.freepik.com/fotos-gratis/cachorrinho-fofo-com-fantasia_23-2148423712.jpg",
+        imagem: "https://image.freepik.com/fotos-gratis/cao-bonito-sentado-com-um-lenco_23-2148423585.jpg",
         nome: "Anne",
         idade: "2",
-        tempo: "meses",
-        raca: "Pintcher",
-        caracteristicas: "pequenino e sem pelos",
-        especie: "canina",
-        sexo: "macho",
-        tamanho: "pequeno",
-        comportamento: "raivoso",
+        tempo: "Meses",
+        especie: "Canina",
+        raca: "Pintcher",        
+        caracteristicas: "Manchas brancas e rabo cortado",        
+        sexo: "Macho",
+        tamanho: "Pequeno",
+        comportamento: "Raivoso",
         local: "Aparecida de Goiânia",
         emailUser: ""
     }
@@ -31,23 +31,28 @@ function Detalhes() {
                     <div className="col col-sm-4" id={Styles.petdetalhes}>
                         <div className="row justify-content-center">
                             <img src={animal.imagem} className={Styles.imagem} />
-                            <div className="fs-2 fw-bold text-info text-xl mb-2">
-                                <p><label ><strong>{animal.nome} </strong></label> - <label className="fst-italic fs-5"><strong>{animal.local} </strong></label></p>
+                            <div className="fs-2 fw-bold descricaotexto text-xl mb-2">
+                                <p><label >{animal.nome} </label> - <label className="fst-italic fs-5">{animal.local} </label></p>
                             </div>
                         </div>
-                        <div className="row mb-3">
-                            <Button className="botoes" size="sm" >Adotar</Button>
-                            <Button className="botoes" size="sm" href="/showpet">Voltar</Button>
+                        <div className="row p-0">
+                            <div className="col-sm-1 col-lg-5 me-3">
+                            <a href="" className=""> <button className="botaocoracao button button-1">Adotar</button></a>
+                            </div>
+                            <div className="col-sm-1 col-lg-5 ms-3">
+                            <a href="/showpet" className=""> <button className="showpegada button button-1">Voltar</button></a>
+                            </div>
                         </div>
                     </div>
-                    <div className="col-sm-5 col-lg-3 ms-4" id={Styles.exibir}>
+                    <div className="col-sm-5 col-lg-3 ms-4 exibirdetalhes">
                         <div className="row mt-4">
-                            <label class=""><strong>Idade:</strong> {animal.idade} {animal.tempo}</label>
-                            <label class=""><strong>Espécie:</strong> {animal.especie}</label>
-                            <label class=""><strong>Raça:</strong> {animal.raca}</label>                            
-                            <label class=""><strong>Sexo:</strong> {animal.sexo}</label>
-                            <label class=""><strong>Tamanho:</strong> {animal.tamanho}</label>
-                            <label class=""><strong>Comportamento:</strong> {animal.comportamento}</label>
+                            <label className=""><strong>Idade:</strong> <spam>{animal.idade} {animal.tempo}</spam></label>
+                            <label className=""><strong>Espécie:</strong> <spam>{animal.especie}</spam></label>
+                            <label className=""><strong>Raça:</strong> <spam>{animal.raca}</spam></label>
+                            <label className=""><strong>Características:</strong> <spam>{animal.caracteristicas}</spam></label>
+                            <label className=""><strong>Sexo:</strong> <spam>{animal.sexo}</spam></label>
+                            <label className=""><strong>Tamanho:</strong> <spam>{animal.tamanho}</spam></label>
+                            <label className=""><strong>Comportamento:</strong> <spam>{animal.comportamento}</spam></label>
                         </div>
                     </div>
                 </div>
@@ -55,6 +60,5 @@ function Detalhes() {
             <Footer />
         </>
     )
-
 }
 export default Detalhes;

@@ -12,6 +12,20 @@ a {
 * {
   box-sizing: border-box;
 }
+strong{
+  color:#DF6E2F;
+  font-size: 1.3em;
+}
+spam{
+  font-weight: bold;
+}
+.reset{
+  
+  font-size: 1em;
+}
+.descricaotexto{
+  color: #3F213B;
+}
 .header{
   padding: 0;
     margin: 0;
@@ -244,6 +258,7 @@ table{border: solid 10px; }
   color: #DF6E2F !important;
   margin-left: 50px ;
 }
+
 .botoes{  
   background: #DF6E2F !important;
   font-family: cursive !important;
@@ -266,40 +281,221 @@ table{border: solid 10px; }
   width: 80px;
 }
 
-.btcoracao {
-  background-image: url("/coracao.png")  ;
+.exibirdetalhes{
+  background-image: url("/petfundo.jpg");
   background-repeat: no-repeat;
-  height:  320px !important;
-  background-color: white !important;
-  border: none !important;
-  font-size:0;  
-}
-.btcoracao:hover{
-  background-image: url("/coracao.png")  ;
-  background-repeat: no-repeat;
-  width: 250px;
-  background-color: white !important;
-  border: none !important;
-  font-size:2em;
-}
-.btpegada:hover{
-  background-image: url("/peg.png")  ;
-  background-repeat: no-repeat;
-  width: 300px !important;
-  border: none !important;
-  font-size: 2em;
-}
-.btpegada{
-  background-image: url("/peg.png")  ;
-  background-repeat: no-repeat;
-  width: 290px ;
-  background-color: white !important;
-  border: none !important;
-  font-size:0;
+  background-size: 140%;
+  background-position: center;
+  border-radius: 50px;  
+  display: flex;
+  justify-content:center;
+  font-family: cursive;    
 }
 
+/* CSS - form cadastro pet/campo tamanho do pet */
+.porte{
+  background-image: url("/tamanho.jpeg");
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  font-size: 1.5em;
+  padding-left: 450px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* CSS - Form Cadastro do pet/ imagem */
+.imagemcadastro{
+  background-color: rgb(236, 236, 236);
+  width: 250px;
+  height: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+}
+
+/* css CORAÇÃO E PEGADA - sm=pqno md=medio lg=grande*/
+.mdcoracao{
+  justify-content: center;
+  background-image: url("/coracao.png") ;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center !important;
+  background-color: white !important;
+  color: white !important;
+  font-family: cursive;
+  border: none !important;
+  width: 120px;
+  height:100px;
+}
+.mdcoracao:hover{
+  justify-content: center;
+  background-image: url("/coracao.png") ;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center !important;
+  background-color: white !important;
+  color: white !important;
+  font-family: cursive;
+  font-size:1.1em;
+  border: none !important;
+  width: 140px;
+  height:100px;
+}
+.mdpegada{
+  background-image: url("/peg.png") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: white !important;
+  color: #3F213B !important;  
+  font-family: cursive;
+  font-weight: bold;
+  border: none !important;
+  width: 90px;
+  height: 100px;
+  text-align: center;
+}
+.mdpegada:hover{
+  background-image: url("/peg.png") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: white !important;
+  color: #3F213B !important;  
+  font-family: cursive;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none !important;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.smcoracao{
+  justify-content: center;
+  background-image: url("/coracao.png") ;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center !important;
+  background-color: white !important;
+  color: white !important;
+  font-family: cursive;
+  border: none !important;
+  width: 90px;
+  height:70px;
+}
+.smcoracao:hover{
+  justify-content: center;
+  background-image: url("/coracao.png") ;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center !important;
+  background-color: white !important;
+  color: white !important;
+  font-family: cursive;
+  font-size:1.1em;
+  border: none !important;
+  width: 100px;
+  height:80px;
+}
+.smpegada{
+  background-image: url("/peg.png") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: white !important;
+  color: #3F213B !important;  
+  font-family: cursive;
+  font-weight: bold;
+  border: none !important;
+  width: 60px;
+  height: 70px;
+  text-align: center;
+}
+.smpegada:hover{
+  background-image: url("/peg.png") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: white !important;
+  color: #3F213B !important;  
+  font-family: cursive;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none !important;
+  width: 70px;
+  height: 80px;
+  text-align: center;
+}
+
+.lgcoracao{
+  justify-content: center;
+  background-image: url("/coracao.png") ;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center !important;
+  background-color: white !important;
+  color: white !important;
+  font-family: cursive;
+  font-size: 1.3em;
+  border: none !important;
+  width: 200px;
+  height:200px;
+}
+.lgcoracao:hover{
+  justify-content: center;
+  background-image: url("/coracao.png") ;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center !important;
+  background-color: white !important;
+  color: white !important;
+  font-family: cursive;
+  font-size:1.6em;
+  border: none !important;
+  width: 200px;
+  height:200px;
+}
+.lgpegada{
+  background-image: url("/peg.png") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: white !important;
+  color: #3F213B !important;  
+  font-family: cursive;
+  font-size: 1.3em;
+  font-weight: bold;
+  border: none !important;
+  width: 140px;
+  height: 150px;
+  text-align: center;
+}
+.lgpegada:hover{
+  background-image: url("/peg.png") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: white !important;
+  color: #3F213B !important;  
+  font-family: cursive;
+  font-size: 1.6em;
+  font-weight: bold;
+  border: none !important;
+  width: 140px;
+  height: 150px;
+  text-align: center;
+}
+
+/* css para textos e demais classes */
 .textado{
-  margin-top: 130px;
+  /* margin-top: 130px; */
+  padding: 0px;
+  margin: 0px;
+  width: 200px;
+  height: 250px;
 }
 .paddingbotton{
   margin-top: 70px;

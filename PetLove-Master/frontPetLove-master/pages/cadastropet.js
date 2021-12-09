@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import { Row, Col } from "reactstrap";
 import Styles from "../styles/User.module.css"
 import React from 'react';
 import { useState } from "react";
@@ -10,15 +8,18 @@ import axios, { Axios } from "axios";
 function FormPet() {
 
     const url = "http://localhost:8080/animais"
+
     const [data, setData] = useState({
         nome: "",
-        nascimento: "",
+        idade: "",
+        tempo: "",
         raca: "",
         caracteristicas: "",
         especie: "",
         sexo: "",
         tamanho: "",
         comportamento: "",
+        imagem: "",
         emailUser: ""
     })
 
@@ -37,6 +38,7 @@ function FormPet() {
                 sexo: data.sexo,
                 tamanho: data.tamanho,
                 comportamento: data.comportamento,
+                imagem: data.imagem,
                 emailUser: global.localStorage.getItem('email')
             })
 
@@ -51,9 +53,7 @@ function FormPet() {
                 }
 
             })
-
     }
-
 
     function handle(e) {
         const newdata = { ...data }
@@ -61,31 +61,44 @@ function FormPet() {
         setData(newdata)
         console.log(newdata)
     }
+
+    const [image, setImage] = useState("")
+
+    const uploadImage = async e => {
+        // e.preventDefault()
+        console.log("upload imagem")
+        // console.log(image)
+    }
+
     return (
         <div >
-            <TopLogin />
-            <div className="container corpo mb-5">
-                <Row className={Styles.borda}>
-                    <Col ><Image src="/pegadas.png" alt="dogCadastro" width={256} height={105} /></Col>
-                    <Col ><Image src="/cadastroDog.png" alt="dogCadastro" width={170} height={240} /></Col>
-                </Row>
 
-                <div className="card mt-5" id={Styles.corpo}>
+            <TopLogin />
+            <div className="container corpo mb-5 mt-5">
+
+
+                <div className="card" id={Styles.corpo}>
                     <div className="card-header text-center" id={Styles.h1}>
                         <h2 className={Styles.h2} id={Styles.pad}>Adicione seu pet para adoção</h2>
+                    </div>
+                    {/* linha da imagem */}
+                    <div className="row mt-3 ajustarconteudo">
+                        <div className="col-lg-12 ms-4 ajustarconteudo">
+                            <img src="/cadastroDog.png" className="imagemcadastro" />
+                        </div>
                     </div>
 
                     {/* linha 1 */}
                     {/* formulario */}
                     <div className='text-center' id={Styles.h1, Styles.h2}></div>
-                    <form onSubmit={(e) => submit(e)} id="userdados" className="mb-1">
+                    <form onSubmit={(e) => [submit(e), uploadImage]} id="userdados" className="mb-1">
                         {/* nome */}
                         <div className="row">
                             <div className="col-sm-6 col-md-6 col-lg-8">
                                 <div className="form-floating mb-3 mt-3 ms-2">
                                     <input type="text" onChange={(e) => handle(e)} value={data.nome}
-                                        className="form-control is-valid"
-                                        id="nome validationServer01"
+                                        className="form-control"
+                                        id="nome"
                                         placeholder="Nome do pet"
                                     />
                                     <label htmlFor="floatingInputNome">Nome do pet</label>
@@ -97,7 +110,7 @@ function FormPet() {
                                 <div className="form-floating mb-3 mt-3 me-n1 mx-0">
                                     <input type="text" onChange={(e) => handle(e)} value={data.idade}
                                         className="form-control"
-                                        id="nascimento"
+                                        id="idade"
                                         placeholder="Idade estimada"
                                     />
                                     <label htmlFor="floatingInputNascimento">Idade</label>
@@ -106,7 +119,7 @@ function FormPet() {
                             {/* meses / anos */}
                             <div className="col-sm-12 col-md-12 col-lg-2">
                                 <div className="form-floating mt-3 mb-3 me-2 mx-n2">
-                                    <select name="idade" className="form-select" id="idade" onChange={(e) => handle(e)} value={data.tempo}>
+                                    <select name="tempo" className="form-select" id="tempo" onChange={(e) => handle(e)} value={data.tempo}>
                                         <option value="sel" >----</option>
                                         <option value="Meses">Meses</option>
                                         <option value="Anos">Anos</option>
@@ -144,9 +157,9 @@ function FormPet() {
 
                         </div>
                         {/* linha 3 */}
-                        {/* sexo */}
+                        {/* L3/C1 especie */}
                         <div className="row my-3">
-                            <div className="col-sm-12 col-md-12 col-lg-3">
+                            <div className="col-sm-2 col-md-2 col-lg-2">
                                 <div className="form-floating ms-2">
                                     <select name="Especie" className="form-select" id="especie" onChange={(e) => handle(e)} value={data.especie}>
                                         <option value="sel" >Espécie</option>
@@ -157,8 +170,8 @@ function FormPet() {
                                 </div>
                             </div>
 
-                            {/* especie */}
-                            <div className="col-sm-12 col-md-12 col-lg-3 col">
+                            {/*L3/C2 sexo */}
+                            <div className="col-sm-12 col-md-12 col-lg-2 col">
                                 <div className="form-floating">
                                     <select name="Sexo" className="form-select" id="sexo" onChange={(e) => handle(e)} value={data.sexo}>
                                         <option value="sel">Sexo</option>
@@ -169,22 +182,11 @@ function FormPet() {
                                 </div>
                             </div>
 
-                            {/* Porte */}
-                            <div className="col-sm-12 col-md-auto col-lg-3 col" >
-                                <div className="form-floating">
-                                    <select name="Porte" className="form-select" id="tamanho" onChange={(e) => handle(e)} value={data.tamanho}>
-                                        <option value="sel">Porte</option>
-                                        <option value="pequeno">Pequeno</option>
-                                        <option value="medio">Médio</option>
-                                        <option value="grande">Grande</option>
-                                    </select>
-                                    <label htmlFor="floatingSelectPorte">Porte</label>
-                                </div>
-                            </div>
 
-                            {/* comportamento */}
-                            <div className="col-sm-12 col-md-auto col-lg-3 col">
-                                <div className="form-floating me-2">
+
+                            {/*L3/C3 comportamento */}
+                            <div className=" col col-sm-3 col-md-3 col-lg-3">
+                                <div className="form-floating">
                                     <select name="Comportamento" className="form-select" id="comportamento" onChange={(e) => handle(e)} value={data.comportamento}>
                                         <option value="sel">Comportamento</option>
                                         <option value="docil">Dócil</option>
@@ -195,15 +197,48 @@ function FormPet() {
                                     <label htmlFor="floatingSelectComportamento">Comportamento</label>
                                 </div>
                             </div>
+                            <div className="porte card col-sm-3 col-md-3 col-lg-4">
+                                <label className="">Porte</label>
+                                <div className="row card-content mt-4">
+                                    <div className="col-sm-2">
+                                        <input className="" type="radio" placeholder="" name="porte" />
+                                    </div>
+                                    <div className="col-sm-2">
+                                        <input className="" type="radio" placeholder="" name="porte" />
+                                    </div>
+                                    <div className="col-sm-2">
+                                        <input className="" type="radio" placeholder="" name="porte" />
+                                    </div>
+                                    <div className="col-sm-2">
+                                        <input className="" type="radio" placeholder="" name="porte" />
+                                    </div>
+                                    <div className="col-sm-2">
+                                        <input className="" type="radio" placeholder="" name="porte" />
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
+                        {/* Porte */}
+                        {/* <div className="col-sm-12 col-md-auto col-lg-3 col" >
+                                <div className="form-floating">
+                                    <select name="Porte" className="form-select" id="tamanho" onChange={(e) => handle(e)} value={data.tamanho}>
+                                        <option value="sel">Porte</option>
+                                        <option value="pequeno">Pequeno</option>
+                                        <option value="medio">Médio</option>
+                                        <option value="grande">Grande</option>
+                                    </select>
+                                    <label htmlFor="floatingSelectPorte">Porte</label>
+                                </div>
+                            </div> */}
                         {/* carregar imagem */}
                         <div className="d-flex justify-content-center mb-4 ">
                             <div className="me-2">
                                 <label className="ms-3 fw-bold" id={Styles.label} for="fotoDoPet">Foto do pet</label>
-                                <input type="file" id="FotoDoPet" className="form-control-file" multiple />
+                                <input type="file" accept=".jpg, .jpeg, .png" id="FotoDoPet" className="form-control-file" name="image" value={data.imagem} onChange={e => setImage(e.target.files[0])} />
                             </div>
                         </div>
-                        
+
                         {/* botao registrar */}
                         <div className="card-footer mt-1">
                             <div className="container d-flex justify-content-center mb-2 mt-2">

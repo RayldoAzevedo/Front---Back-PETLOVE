@@ -38,8 +38,10 @@
 }
 
 #exibir{
-    border-radius: 50px;
-    background-color:rgb(212, 209, 209) ;
+    background-image: url("/petfundo.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50px;  
     display: flex;
     justify-content:center;    
 }

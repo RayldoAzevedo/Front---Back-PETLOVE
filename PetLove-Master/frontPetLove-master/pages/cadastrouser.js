@@ -66,7 +66,7 @@ function FormUser(){
         <div>
             {/* <Top/>  */}
             <TopLogin />
-            <div className="container corpo">
+            <div className="container corpo mb-4">
 
                 <Row className={Styles.borda}>
                     <Col ><Image src="/pegadas.png" alt="dogCadastro" width={256} height={105} /></Col>
@@ -208,7 +208,7 @@ function FormUser(){
                 </div>
             </div>
 
-            <CatServico />
+            {/* <CatServico /> */}
             <Footer />
         </div>
     )

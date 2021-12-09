@@ -4,35 +4,32 @@ import Image from 'next/image';
 
 const Banner = () => (
   <>
-  <div className="container mb-0 mt-0 p-0">
-    <div className="row">
-
-      <div className="col-sm-8 col-lg-5">
-        <h1 className="topoq optext">O que deseja Fazer?</h1>
-      </div>
-      <div className="col-sm-8 col-lg-3">
-        <div className="topoq">
-          <Image src="/pegadas.png" width={256} height={105} />
+    <div className="container justify-content-center">
+      <div className="row m-0 justify-content-center">
+        {/* coluna 1 */}
+        <div className="col-sm-5 col-lg-4">
+          <h1 className="topoq optext">O que deseja Fazer?</h1>
         </div>
-      </div>
-
-      {/* adoçao */}
-      <div className="col-sm-8 col-lg-2">
-        <div className="btado d-grid gap-2">
-          <Button className="btcoracao d-grid gap-2" variant="primary" size="lg" link href="/showpet"><span className="textado">Adoção </span></Button>{' '}
+        {/* coluna 2 */}
+        <div className="col-sm-3 col-lg-2">
+          <div className="topoq">
+            <Image src="/pegadas.png" width={200} height={90} />
+          </div>
         </div>
-      </div>
-
-      {/* doaçao */}
-      <div className="col-md-auto col-sm-8 col-lg-2">
-        <div className="d-grid gap-2 topoq">
-          <Button className="btpegada d-grid gap-2" variant="primary" size="lg" link href="/cadastropet"><span className="textado">Doação</span></Button>
+        {/* coluna adocao */}
+        <div className="col-sm-3 col-lg-3 p-0 ">          
+            <a href="/showpet" className=""> <button className="lgcoracao button button-1">Adoção</button></a>         
         </div>
-      </div>
+        {/* coluna doacao */}
+        <div className=" col-sm-3 col-lg-2 ">
+          <div className="mt-4 p-0">
+          <a href="/cadastropet" className=""> <button className="lgpegada button button-1">Doação</button></a>
+          </div>
+        </div>
 
+      </div>
     </div>
-  </div>
- </>
+  </>
 
 );
 
