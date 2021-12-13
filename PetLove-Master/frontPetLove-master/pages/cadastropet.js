@@ -28,7 +28,6 @@ function FormPet() {
 
         axios.post(url,
             {
-
                 nome: data.nome,
                 idade: data.idade,
                 tempo: data.tempo,
@@ -72,10 +71,8 @@ function FormPet() {
 
     return (
         <div >
-
             <TopLogin />
             <div className="container corpo mb-5 mt-5">
-
 
                 <div className="card" id={Styles.corpo}>
                     <div className="card-header text-center" id={Styles.h1}>
@@ -247,7 +244,7 @@ function FormPet() {
                                 </div>
                             </div>
                         </div>
-                        
+
                     </form>
                     {/* form end */}
                 </div>
