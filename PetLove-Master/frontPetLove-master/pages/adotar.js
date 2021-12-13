@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer'
-import Top from '../components/Top';
+import TopLogin from '../components/TopLogin';
 import Styles from "../styles/User.module.css"
 import axios, { Axios } from "axios";
 
@@ -13,7 +13,6 @@ function Adotar() {
         local: "Aparecida de Goiânia"
     }
 
-
     {/* 
             1. Quantos animais você tem em casa, 
             2. Qual o motivo da adoção?
@@ -21,11 +20,12 @@ function Adotar() {
             4. Qual a moradia (casa, apartamento, chácara etc.)? 
             5. Tem criança em casa? 
             6. O animal vai ficar sozinho durante o dia? por quanto tempo?  
-            7. Qual sua média salarial? */}
+            7. Qual sua média salarial? 
+    */}
 
     return (
         <>
-            <Top />
+            <TopLogin/>
             <div className="container corpo mb-4 mt-4">
 
                 <div className="card">
@@ -129,8 +129,11 @@ function Adotar() {
 
                             <div className="card-footer">
                                 <div className="row">
-                                    <div className="container d-flex justify-content-center input-heigth">
-                                        <button className={Styles.btregistrar} >Enivar Fomulário</button>
+                                    <div className="col-lg-6 d-flex justify-content-center input-heigth">
+                                        <button className={Styles.btregistrar} >Voltar</button>
+                                    </div>
+                                    <div className="col-lg-6 d-flex justify-content-center input-heigth">
+                                        <button className={Styles.btregistrar} >Enviar Fomulário</button>
                                     </div>
                                 </div>
                             </div>
