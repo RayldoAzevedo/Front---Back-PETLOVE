@@ -240,11 +240,14 @@ function FormPet() {
                         </div>
 
                         {/* botao registrar */}
-                        <div className="card-footer mt-1">
-                            <div className="container d-flex justify-content-center mb-2 mt-2">
-                                <button className={Styles.btregistrar} >Cadastrar</button>
+                        <div className="card-footer mt-1 ">
+                            <div className="row input-heigth mb-2">
+                                <div className="container d-flex justify-content-center mb-2 mt-2">
+                                    <button className={Styles.btregistrar} >Cadastrar</button>
+                                </div>
                             </div>
                         </div>
+                        
                     </form>
                     {/* form end */}
                 </div>
