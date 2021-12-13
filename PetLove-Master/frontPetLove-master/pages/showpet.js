@@ -18,7 +18,7 @@ function showPet() {
             local: "Goiânia"
         },
         {
-            nome: "Billy",
+            nome: "Hulk",
             foto: "https://image.freepik.com/fotos-gratis/cao-pequeno-bonito-com-espaco-de-copia_23-2148423607.jpg",
             local: "Trindade"
         },
@@ -86,7 +86,7 @@ function showPet() {
                                             </div>
                                             {/* L2/C2 */}
                                             <div className="col-sm-1 col-lg-5">
-                                            <a href="/descricao"> <button type="button" className="smpegada button button-1" id="">saber mais</button></a>
+                                            <a href="/descricao"> <button type="button" className="mdpegada button button-1" id="">saber mais</button></a>
                                             </div>
                                         </div>
                                     </div>

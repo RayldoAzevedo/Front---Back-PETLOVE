@@ -490,7 +490,8 @@ table{border: solid 10px; }
   font-family: cursive;
   font-weight: bold;
   border: none !important;
-  width: 90px;
+  margin-top: 10px;
+  width: 75px;
   height: 100px;
   text-align: center;
 }
@@ -504,8 +505,9 @@ table{border: solid 10px; }
   font-family: cursive;
   font-size: 1.1em;
   font-weight: bold;
+  
   border: none !important;
-  width: 100px;
+  width: 85px;
   height: 100px;
   text-align: center;
 }
@@ -550,6 +552,7 @@ table{border: solid 10px; }
   height: 70px;
   text-align: center;
 }
+
 .smpegada:hover{
   background-image: url("/peg.png") ;
   background-repeat: no-repeat;
