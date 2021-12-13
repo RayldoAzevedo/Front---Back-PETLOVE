@@ -52,9 +52,7 @@ function showPet() {
             foto: "https://www.petz.com.br/blog/wp-content/uploads/2019/07/vida-de-gatos.jpg",
             local: "Goiânia"            
         }
-    ]
-
-    
+    ]    
 
     return (        
         <>
@@ -96,9 +94,7 @@ function showPet() {
                             </div>
                         </div>
                     ))}
-                    <div className="">
-                        
-                    </div>
+                    
             </div>
 
             <Footer />

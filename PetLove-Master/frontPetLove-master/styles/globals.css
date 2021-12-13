@@ -19,9 +19,140 @@ strong{
 spam{
   font-weight: bold;
 }
-.reset{
-  
+.fundoform{          
+    border-radius: 50px;  
+    display: flex;
+    justify-content:center;
+    font-family: cursive;    
+}
+.just-cont-l{
+    display: flex;
+    justify-content:left;
+    font-family: cursive;
+}
+.just-cont-R{
+    display: flex;
+    justify-content:left;
+    font-family: cursive;
+}
+/* input text */
+.inp-w-1{
+  width: 50px;
+  text-align: center;
+}
+.inp-w-2{
+  width: 50%;
+  text-align: center;
+}
+.inp-w-3{
+  width: 75%;
+  text-align: center;
+}
+.inp-w-4{
+  width: 600px;
+  text-align: center;
+}
+.input-heigth{
+  height: 30px;
+}
+.inp-h-1{
+  height: 20%;
+  text-align: center;
+}
+.inp-h-2{
+  height: 30%;
+  text-align: center;
+}
+.inp-h-3{
+  height: 40%;
+  text-align: center;
+}
+.inp-h-4{
+  height: 50%;
+  text-align: center;
+}
+.inp-h-5{
+  height: 60%;
+  text-align: center;
+}
+.inp-h-6{
+  height: 80%;
+  text-align: center;
+}
+.inp-h-7{
+  height: 100%;
+  text-align: center;
+}
+
+/* input color */
+.inp-border-color-1{
+    border-color: white;
+}
+.inp-border-color-2{
+  border-color: #3F213B;
+}
+.inp-border-color-3{
+  border: solid 1px;
+  border-color: #DF6E2F;
+}
+
+
+
+/* backgroud */
+.b-img-1{
+    background-image: url("/petfundo.jpg");
+    background-repeat: no-repeat;
+    background-size: 140%;
+    background-position: center;
+}
+.b-color-1{
+  background-color: white!important;
+}
+.b-color-2{
+  background-color: #3F213B !important;
+}
+.b-color-3{
+  background-color: #DF6E2F !important;
+}
+
+/* border radius */
+.b-radius-1{
+  border-radius: 10px;
+}
+.b-radius-2{
+  border-radius: 20px;
+}
+.b-radius-3{
+  border-radius: 30px;
+}
+.b-radius-4{
+  border-radius: 40px;
+}
+.b-radius-5{
+  border-radius: 50px;
+}
+
+/* fontes */
+.reset{  
   font-size: 1em;
+}
+.f-cursive{
+  font-family: cursive;
+}
+.f-reset{
+  font-size: 1em;
+}
+.fonte-2{
+  font-size: 2em;
+}
+.f-color-1{
+  color: white !important;
+}
+.f-color-2{
+  color: #3F213B !important;
+}
+.f-color-3{
+  color: #DF6E2F !important;
 }
 .descricaotexto{
   color: #3F213B;
@@ -314,6 +445,11 @@ table{border: solid 10px; }
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 50px;
+}
+.formadocao{
+  font-size:1.2em;
+  font-family: cursive;
+
 }
 
 /* css CORAÇÃO E PEGADA - sm=pqno md=medio lg=grande*/

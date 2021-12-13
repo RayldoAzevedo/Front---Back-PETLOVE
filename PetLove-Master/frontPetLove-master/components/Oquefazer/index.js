@@ -26,7 +26,6 @@ const Banner = () => (
           <a href="/cadastropet" className=""> <button className="lgpegada button button-1">Doação</button></a>
           </div>
         </div>
-
       </div>
     </div>
   </>

@@ -37,10 +37,10 @@ function Detalhes() {
                         </div>
                         <div className="row p-0">
                             <div className="col-sm-1 col-lg-5 me-3">
-                            <a href="" className=""> <button className="botaocoracao button button-1">Adotar</button></a>
+                            <a href="adotar" className=""> <button className="mdcoracao button button-1">Adotar</button></a>
                             </div>
                             <div className="col-sm-1 col-lg-5 ms-3">
-                            <a href="/showpet" className=""> <button className="showpegada button button-1">Voltar</button></a>
+                            <a href="/showpet" className=""> <button className="smpegada button button-1">Voltar</button></a>
                             </div>
                         </div>
                     </div>
