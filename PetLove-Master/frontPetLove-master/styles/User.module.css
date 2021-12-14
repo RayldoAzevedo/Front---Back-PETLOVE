@@ -24,10 +24,13 @@
     border-bottom: 20px;
   }
   
-  .previewimg {
-    width: 100px;
-    height: 100px;
-    margin: 16px;
+  .previewimg {    
+    background-color: rgb(236, 236, 236);
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
     object-fit: contain;
   }
   
