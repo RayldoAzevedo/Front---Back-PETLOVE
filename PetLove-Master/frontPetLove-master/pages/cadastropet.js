@@ -69,22 +69,20 @@ function FormPet() {
     return (
         <div>
             <TopLogin />
-            <div className="container corpo mb-5 mt-5">
-                <div className="card" id={Styles.corpo}>
+            <div className="container corpoform mb-5 mt-5">
+                <div className="card corpoform" id={Styles.corpo}>
                     <div className="card-header text-center" id={Styles.h1}>
-                        <h2 className={Styles.h2} id={Styles.pad}>
+                        <h2 className="h2 mt-2" id={Styles.pad}>
                             Adicione seu pet para adoção
                         </h2>
                     </div>
                     {/* linha da imagem */}
-                    <div className="row mt-3 ajustarconteudo">
-                        <div className="col-lg-12 ms-4 ajustarconteudo">
+                    <div className="row mt-3 ajustarconteudo card-header d-flex justify-content-center">
+                        <div className="col-lg-12 ms-4 ajustarconteudo border me-4" id={Styles.corpo}>
                             {data.imagem.length > 0 && (
                                 <img
-                                    className={Styles.previewimg}
+                                    className="previewimg"
                                     src={data.imagem}
-                                    width={"200px"}
-                                    height={"200px"}
                                     object-fit="contain"
                                     alt="preview"
                                 />

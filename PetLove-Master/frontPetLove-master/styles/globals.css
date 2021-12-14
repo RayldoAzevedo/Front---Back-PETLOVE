@@ -295,10 +295,20 @@ spam{
 .pegadas{
   text-align: right;
 }
+.corpoform {
+  background-color: #ddd;
+}
+
 select{border-radius: 12px; background-color: white !important;}
 
 tr, td, th {border-radius: 12px; background-color: #3F213B; color: aliceblue;  border: solid 8px; }
 table{border: solid 10px; }
+
+.h2 {
+  color: aliceblue;
+  padding: 0;
+  margin: 0;
+}
 
 .tablespace {padding-top: 15px;}
 .banner{
@@ -435,6 +445,15 @@ table{border: solid 10px; }
   justify-content: center;
   align-items: center;
 
+}
+.previewimg {    
+  background-color: rgb(236, 236, 236);
+  width: 250px;
+  height: 250px;
+  margin-left: 350px;
+  margin-right: 10px;
+  border-radius: 50px;
+  object-fit: contain;
 }
 
 /* CSS - Form Cadastro do pet/ imagem */

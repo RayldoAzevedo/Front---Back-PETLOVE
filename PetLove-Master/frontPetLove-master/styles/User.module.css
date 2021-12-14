@@ -12,6 +12,7 @@
   #corpo {
     background-color: #ddd;
   }
+  
   #h1 {
     padding: 0;
     margin: 0;
@@ -25,7 +26,7 @@
   }
   
   .previewimg {    
-    background-color: rgb(236, 236, 236);
+    background-color: #ddd;
     width: 250px;
     height: 250px;
     margin-left: 10px;
@@ -34,11 +35,6 @@
     object-fit: contain;
   }
   
-  .h2 {
-    color: aliceblue;
-    padding: 0;
-    margin: 0;
-  }
   
   .text {
     font-size: 0.8em;
