@@ -435,16 +435,14 @@ table{border: solid 10px; }
 
 /* CSS - form cadastro pet/campo tamanho do pet */
 .porte{
-  background-image: url("/tamanho.jpeg");
-  height: 100px;
+  background-image: url("/Porte.png");
+  height: 200px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
   justify-content: center;
-  font-size: 1.5em;
-  padding-left: 450px;
   justify-content: center;
   align-items: center;
-
 }
 .previewimg {    
   background-color: rgb(236, 236, 236);

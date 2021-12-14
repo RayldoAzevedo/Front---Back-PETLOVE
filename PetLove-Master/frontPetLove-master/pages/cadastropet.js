@@ -81,7 +81,7 @@ function FormPet() {
                         <div className="col-lg-12 ms-4 ajustarconteudo border me-4" id={Styles.corpo}>
                             {data.imagem.length > 0 && (
                                 <img
-                                    className="previewimg"
+                                    className="previewimg corpoform"
                                     src={data.imagem}
                                     object-fit="contain"
                                     alt="preview"
@@ -240,10 +240,11 @@ function FormPet() {
                                     </label>
                                 </div>
                             </div>
-                            <div className="porte card col-sm-3 col-md-3 col-lg-4">
-                                <label className="">Porte</label>
-                                <div className="row card-content mt-4">
+                            <div className="porte container col-sm-3 col-md-3 col-lg-4 mt-0">
+                                {/* <label className="ms-5 ">Porte</label> */}
+                                <div className="row mt-5 ms-2">
                                     <div className="col-sm-2">
+                                        <label className="">1</label>
                                         <input
                                             className=""
                                             type="radio"
@@ -251,7 +252,8 @@ function FormPet() {
                                             name="porte"
                                         />
                                     </div>
-                                    <div className="col-sm-2">
+                                    <div className="col-sm-2 ms-2">
+                                        <label className="">2</label>
                                         <input
                                             className=""
                                             type="radio"
@@ -259,7 +261,8 @@ function FormPet() {
                                             name="porte"
                                         />
                                     </div>
-                                    <div className="col-sm-2">
+                                    <div className="col-sm-2 ms-3">
+                                        <label className="">3</label>
                                         <input
                                             className=""
                                             type="radio"
@@ -267,7 +270,8 @@ function FormPet() {
                                             name="porte"
                                         />
                                     </div>
-                                    <div className="col-sm-2">
+                                    <div className="col-sm-2 ms-3">
+                                        <label className="">4</label>
                                         <input
                                             className=""
                                             type="radio"
@@ -275,7 +279,8 @@ function FormPet() {
                                             name="porte"
                                         />
                                     </div>
-                                    <div className="col-sm-2">
+                                    <div className="col-sm-2 ms-3">
+                                        <label className="">5</label>
                                         <input
                                             className=""
                                             type="radio"
@@ -302,7 +307,7 @@ function FormPet() {
                         <div className="d-flex justify-content-center mb-4 ">
                             <div className="me-2">
                                 <label
-                                    className="ms-3 fw-bold"
+                                    className="ms-3 fw-bold mt-5"
                                     id={Styles.label}
                                     htmlFor="fotoDoPet"
                                 >
