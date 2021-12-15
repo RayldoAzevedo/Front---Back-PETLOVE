@@ -191,8 +191,7 @@ function FormPet() {
                                         className="form-select"
                                         id="especie"
                                         onChange={(e) => handle(e)}
-                                        value={data.especie}
-                                    >
+                                        value={data.especie}                                    >
                                         <option value="sel">Espécie</option>
                                         <option value="can">Canino</option>
                                         <option value="del">Felino</option>
@@ -200,7 +199,7 @@ function FormPet() {
                                     <label htmlFor="floatingSelectEspecie">Especie</label>
                                 </div>
                             </div>
-
+                                {/* testaando modificação */}
                             {/*L3/C2 sexo */}
                             <div className="col-sm-12 col-md-12 col-lg-2 col">
                                 <div className="form-floating">
