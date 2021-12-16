@@ -30,7 +30,7 @@ function Adotar() {
 
                 <div className="card">
                     <div className="card-header text-center" id={Styles.h1}>
-                        <h2 className={Styles.h2}>Questionário</h2>
+                        <h2 className="f-color-1">Questionário</h2>
                     </div>
                     <div className="card-body" id={Styles.corpo}>
 

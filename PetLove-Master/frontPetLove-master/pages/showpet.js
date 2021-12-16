@@ -14,6 +14,7 @@ function showPet() {
             local: "Aparecida de Goiânia"
         },
         {
+            id:2,
             nome: "Thor",
             foto: "https://www.petz.com.br/blog/wp-content/uploads/2019/07/vida-de-gato-pets.jpg",
             local: "Goiânia"
@@ -60,6 +61,7 @@ function showPet() {
             <TopLogin />
             <div className={Styles.animal}>
                 {animais.map(animal => (
+
                     <div className="mb-5">
                         {/* linha 1 */}
                         <div >
